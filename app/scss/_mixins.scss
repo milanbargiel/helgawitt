@@ -1,0 +1,10 @@
+@mixin underline($color) {
+  background-color: $color;
+  bottom: -1px;
+  content: "";
+  height: 1px;
+  left: 0;
+  opacity: .4;
+  position: absolute;
+  width: 100%;
+}

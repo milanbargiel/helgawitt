@@ -14,7 +14,7 @@
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700" rel="stylesheet">
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,10 +27,22 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
 </head>
 <body>
-
-    <div class="content">
+    <div class="nav-container">
+        <div class="nav-link nav-link--main"><a href="#" class="nav-link__active">Helga Witt</a></div>
+        <nav class="secondary-links">
+            <ul>
+                <li class="nav-link"><a href="#">Gestalttherapie</a></li>
+                <li class="nav-link"><a href="#">Kosten</a></li>
+                <li class="nav-link"><a href="#">Über Helga Witt</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content-container">
         {% block content %} {% endblock %}
-      </div>
+        <div class="impressum">
+            © Helga Witt 2018 / <a href="#" class="impressum__link">Impressum</a>
+        </div>
+    </div>
   </div>
 
 

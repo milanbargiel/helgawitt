@@ -1,0 +1,74 @@
+body {
+  color: $black;
+  font-family: 'Overpass', sans-serif;
+  font-size: $font-s;
+  font-weight: 400;
+  line-height: $line-height;
+}
+
+.nav-container {
+  margin: $dist-s $dist-xs $dist-m;
+}
+
+.content-container {
+  margin: 0 $dist-xs;
+}
+
+
+@media screen and (min-width: $bp-tablet) {
+  .secondary-links {
+    float: right;
+  }
+}
+
+.nav-link {
+  font-size: $font-s;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: $dist-xxs;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: inline-block;
+    margin-right: $dist-xs;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &--main {
+    font-size: $font-m;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: $dist-s;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__active {
+    position: relative;
+
+    &:after {
+      @include underline($blue);
+    }
+  }
+}
+
+.impressum { 
+  color: $grey;
+  float: right;
+  font-size: $font-xs;
+  margin-bottom: $dist-xxs;
+
+  &__link {
+    color: $grey;
+    position: relative;
+
+    &:after {
+      @include underline(currentColor);
+    }
+  }
+}

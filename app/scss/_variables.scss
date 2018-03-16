@@ -1,1 +1,24 @@
-$font-size: 32px;
+// Font
+$font-xs: 1.3rem;
+$font-s: 1.5rem;
+$font-m: 2rem;
+$font-l: 3.1rem;
+$line-height: 1.45;
+$line-height-heading: 1.2;
+
+// Colors
+$light-grey: #f0f0ed;
+$grey: #707070;
+$black: rgba(0,0,0,0.85);
+$blue: #43d9e8;
+
+// Spacing
+$dist-xxxs: .4rem;
+$dist-xxs: .8rem;
+$dist-xs: 1.5rem;
+$dist-s: 2.1rem;
+$hefty: 4rem;
+$dist-m: 5.0rem;
+
+// Breakpoints
+$bp-tablet: 550px;

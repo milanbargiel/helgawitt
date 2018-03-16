@@ -1,0 +1,53 @@
+.header {
+  margin-bottom: $hefty;
+
+  &__main {
+    font-size: $font-l;
+    line-height: $line-height-heading;
+    margin-bottom: $dist-xxxs;
+  }
+
+  &__sub {
+    font-size: $font-s;
+  }
+}
+
+.image {
+  max-width: 100%;
+}
+
+.main {
+  margin-bottom: $hefty;
+}
+
+.contact {
+  margin-bottom: $dist-s;
+
+  &__header {
+    font-size: $font-m;
+  }
+
+  &__line {
+    display: block;
+  }
+}
+
+.map {
+  background-color: #f0f0ed;
+  font-size: $font-m;
+  line-height: 22rem;
+  height: 22rem;
+  margin-bottom: $hefty;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  
+  &__placeholder-text {
+    color: $grey;
+    position: relative;
+
+    &:after {
+      @include underline(currentColor);
+    }
+  }
+}
