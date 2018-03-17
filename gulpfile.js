@@ -69,19 +69,19 @@ gulp.task('useref', () => {
     .pipe(gulpIf('*.js', babel({ presets: ['es2015'] }))) // transpile es6 to es5
     .pipe(gulpIf('*.js', uglify())) // minify only js files
     .pipe(gulpIf('*.css', cssnano())) // minify only css files
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 });
 
 // Optimize images
 gulp.task('images', () => {
   gulp.src('app/images/**/*.+(png|jpg|gif|svg|ico)')
     .pipe(cache(imagemin())) // cache minified images (only new/modified images get compressed)
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('docs/images'));
 });
 
 // Cleaning
-gulp.task('clean:dist', () => { // delete dist folder whenever task is run
-  del.sync('dist');
+gulp.task('clean:dist', () => { // delete docs folder whenever task is run
+  del.sync('docs', '!CNAME');
 });
 
 /* Run sequences

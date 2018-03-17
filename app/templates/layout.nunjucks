@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ title }}</title>
-    <meta name="description" content="simple-boilerplate Milan Bargiel">
+    <meta name="description" content="">
 
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -28,12 +28,12 @@
 </head>
 <body>
     <div class="nav-container">
-        <div class="nav-link nav-link--main {% if title == 'Helga Witt | Psychotherapie von Gestalttherapeutin' %}nav-link__active{% endif %}"><a href="/index.html">Helga Witt</a></div>
+        <div class="nav-link nav-link--main {% if title == 'Helga Witt | Psychotherapie von Gestalttherapeutin' %}nav-link__active{% endif %}"><a href="index.html">Helga Witt</a></div>
         <nav class="secondary-links">
             <ul>
-                <li class="nav-link {% if title == 'Gestalttherapie | Helga Witt' %}nav-link__active{% endif %}"><a href="/gestalttherapie.html">Gestalttherapie</a></li>
-                <li class="nav-link {% if title == 'Kosten für die Therapie | Helga Witt' %}nav-link__active{% endif %}"><a href="/kosten.html">Kosten</a></li>
-                <li class="nav-link {% if title == 'Über Helga Witt | Helga Witt' %}nav-link__active{% endif %}"><a href="/helga-witt.html">Über Helga Witt</a></li>
+                <li class="nav-link {% if title == 'Gestalttherapie | Helga Witt' %}nav-link__active{% endif %}"><a href="gestalttherapie.html">Gestalttherapie</a></li>
+                <li class="nav-link {% if title == 'Kosten für die Therapie | Helga Witt' %}nav-link__active{% endif %}"><a href="kosten.html">Kosten</a></li>
+                <li class="nav-link {% if title == 'Über Helga Witt | Helga Witt' %}nav-link__active{% endif %}"><a href="helga-witt.html">Über Helga Witt</a></li>
             </ul>
         </nav>
     </div>
