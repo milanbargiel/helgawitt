@@ -4,18 +4,42 @@ body {
   font-size: $font-s;
   font-weight: 400;
   line-height: $line-height;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: $font-mm;
+  }
 }
 
 .nav-container {
-  margin: $dist-s $dist-xs $dist-m;
+  margin: $little $little $big;
+
+  @media screen and (min-width: $bp-phablet) {
+    margin-bottom: $huge;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    margin: $twice $twice $huge;
+  }
 }
 
 .content-container {
-  margin: 0 $dist-xs;
+  padding: 0 $little;
+  max-width: 940px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 0 $twice;
+    margin: 0 auto;
+  }
 }
 
+.column-container {
+  @media screen and (min-width: $bp-tablet) {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
 
-@media screen and (min-width: $bp-tablet) {
+@media screen and (min-width: $bp-phablet) {
   .secondary-links {
     float: right;
   }
@@ -26,25 +50,35 @@ body {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .5px;
-  margin-bottom: $dist-xxs;
+  margin-bottom: $thin;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-phablet) {
     display: inline-block;
-    margin-right: $dist-xs;
+    margin-right: $little;
 
     &:last-child {
       margin-right: 0;
     }
   }
 
+  @media screen and (min-width: $bp-tablet) {
+    font-size: $font-mm;
+    line-height: $font-ll;
+    margin-right: $small;
+  }
+
   &--main {
     font-size: $font-m;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-bottom: $dist-s;
+    margin-bottom: $little;
+
+    @media screen and (min-width: $bp-phablet) {
+      margin-bottom: 0;
+    }
 
     @media screen and (min-width: $bp-tablet) {
-      margin-bottom: 0;
+      font-size: $font-ll;
     }
   }
 
@@ -61,7 +95,11 @@ body {
   color: $grey;
   float: right;
   font-size: $font-xs;
-  margin-bottom: $dist-xxs;
+  margin-bottom: $thin;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: $font-s;
+  }
 
   &__link {
     color: $grey;

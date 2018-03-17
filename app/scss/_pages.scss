@@ -1,30 +1,64 @@
 .header {
   margin-bottom: $hefty;
 
+  @media screen and (min-width: $bp-phablet) {
+    margin-bottom: $wide;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    text-align: center;
+  }
+
   &__main {
     font-size: $font-l;
     line-height: $line-height-heading;
-    margin-bottom: $dist-xxxs;
+    margin-bottom: $thin;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: $font-xl;
+      margin-bottom: $thin;
+    }
   }
 
   &__sub {
     font-size: $font-s;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: $font-mm;
+    }
   }
 }
 
 .image {
   max-width: 100%;
+  margin-bottom: $small;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: $twice;
+  }
+}
+
+.paragraph {
+  margin-bottom: $little;
 }
 
 .main {
-  margin-bottom: $hefty;
+  margin-bottom: $big;
 }
 
 .contact {
-  margin-bottom: $dist-s;
+  margin-bottom: $twice;
+
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: $big;
+  }
 
   &__header {
-    font-size: $font-m;
+    font-size: $font-ll;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: $font-l;
+    }
   }
 
   &__line {
@@ -32,22 +66,14 @@
   }
 }
 
-.map {
-  background-color: #f0f0ed;
-  font-size: $font-m;
-  line-height: 22rem;
-  height: 22rem;
-  margin-bottom: $hefty;
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-  
-  &__placeholder-text {
-    color: $grey;
-    position: relative;
+#google-map {
+  display: none;
 
-    &:after {
-      @include underline(currentColor);
-    }
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: $light-grey;
+    margin-bottom: $small;
   }
 }

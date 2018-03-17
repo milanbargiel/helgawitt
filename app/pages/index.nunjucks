@@ -7,18 +7,21 @@
   <h1 class="header__main">Psychotherapie von Gestalttherapeutin</h1>
   <span class="header__sub">für Kinder, Jugendliche und Erwachsene</span>
 </div>
-<img src="images/gestalttherapie-praxis.jpg" class="image">
-<div class="main">
-  <p><b>Gestalttherapie</b> bietet Dir Raum, eigene Gefühle und Bedürfnisse wahrzunehmen, innere Muster zu erkunden, eigene Fähigkeiten und persönliche Stärken besser kennenzulernen, neue Möglichkeiten zu entdecken und diese in einem geschützten Rahmen auszuprobieren. Darüber hinaus nimmst Du Grenzen besser wahr.</p>
-  <p>Ich möchte Dich dabei begleiten eigene Lebens-Räume mutiger und mit mehr innerer Wertschätzung zu gestalten.</p>
+<div class="column-container">
+  <img src="images/gestalttherapie-praxis.jpg" class="image">
+  <div class="main">
+    <p class="paragraph"><b>Gestalttherapie</b> bietet Dir Raum, eigene Gefühle und Bedürfnisse wahrzunehmen, innere Muster zu erkunden, eigene Fähigkeiten und persönliche Stärken besser kennenzulernen, neue Möglichkeiten zu entdecken und diese in einem geschützten Rahmen auszuprobieren. Darüber hinaus nimmst Du Grenzen besser wahr.</p>
+    <p class="paragraph">Ich möchte Dich dabei begleiten eigene Lebens-Räume mutiger und mit mehr innerer Wertschätzung zu gestalten.</p>
+  </div>
+  <div class="contact">
+    <div class="contact__header">Helga Witt M.A.</div>
+    <span class="contact__line">Praxis in der Skalitzer Str. 50</span>
+    <span class="contact__line">10977 Berlin</span>
+    <span class="contact__line">Telefon: (030) 612 89 421</span>
+  </div>
 </div>
-<div class="contact">
-  <div class="contact__header">Helga Witt M.A.</div>
-  <span class="contact__line">Praxis in der Skalitzer Str. 50</span>
-  <span class="contact__line">10977 Berlin</span>
-  <span class="contact__line">Telefon: (030) 612 89 421</span>
-</div>
-<div class="map">
-  <span class="map__placeholder-text">Karte</span>
+<div id="google-map">
+  <script src="js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ljrs81BUmzYdXsjrcq66UQwu8DBUby0&callback=initMap"></script>
 </div>
 {% endblock %}

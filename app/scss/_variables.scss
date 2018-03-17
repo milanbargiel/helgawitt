@@ -1,10 +1,13 @@
 // Font
 $font-xs: 1.3rem;
 $font-s: 1.5rem;
+$font-mm: 1.8rem;
 $font-m: 2rem;
+$font-ll: 2.2rem;
 $font-l: 3.1rem;
+$font-xl: 3.8rem;
 $line-height: 1.45;
-$line-height-heading: 1.2;
+$line-height-heading: 1.1;
 
 // Colors
 $light-grey: #f0f0ed;
@@ -13,12 +16,15 @@ $black: rgba(0,0,0,0.85);
 $blue: #43d9e8;
 
 // Spacing
-$dist-xxxs: .4rem;
-$dist-xxs: .8rem;
-$dist-xs: 1.5rem;
-$dist-s: 2.1rem;
+$thin: .8rem;
+$little: 1.4rem;
+$small: 1.8rem;
+$twice: 3rem;
 $hefty: 4rem;
-$dist-m: 5.0rem;
+$big: 5.0rem;
+$wide: 10.2rem;
+$huge: 14rem;
 
 // Breakpoints
-$bp-tablet: 550px;
+$bp-phablet: 600px;
+$bp-tablet: 750px;
