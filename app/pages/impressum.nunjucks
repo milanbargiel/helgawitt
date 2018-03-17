@@ -1,0 +1,35 @@
+<!-- index.nunjucks -->
+{% set title = 'Impressum | Helga Witt' %}
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="header">
+  <h1 class="header__main">Impressum</h1>
+</div>
+<div class="column-container">
+  <div class="main">
+    <div class="paragraph">
+      <b>Herausgeberin</b>
+      <span class="contact__line">Helga Witt</span>
+    </div>
+    <div class="paragraph">
+      <b>Postanschrift</b>
+      <span class="contact__line">Praxis in der Skalitzer Str. 50</span>
+      <span class="contact__line">10977 Berlin</span>
+    </div>
+    <div class="paragraph">
+      <b>Kontakt</b>
+      <span class="contact__line">Telefon: (030) 612 89 421</span>
+      <span class="contact__line">E-Mail: ...</span>
+    </div>
+    <div class="paragraph">
+      <b>Umsatzsteuer-ID</b>
+      <span class="contact__line">...</span>
+    </div>
+    <div class="paragraph">
+      <b>Aufsichtsbehörde</b>
+      <span class="contact__line">...</span>
+    </div>
+  </div>
+</div>
+{% endblock %}

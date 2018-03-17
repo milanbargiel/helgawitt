@@ -28,19 +28,19 @@
 </head>
 <body>
     <div class="nav-container">
-        <div class="nav-link nav-link--main"><a href="#" class="nav-link__active">Helga Witt</a></div>
+        <div class="nav-link nav-link--main {% if title == 'Helga Witt | Psychotherapie von Gestalttherapeutin' %}nav-link__active{% endif %}"><a href="/index.html">Helga Witt</a></div>
         <nav class="secondary-links">
             <ul>
-                <li class="nav-link"><a href="#">Gestalttherapie</a></li>
-                <li class="nav-link"><a href="#">Kosten</a></li>
-                <li class="nav-link"><a href="#">Über Helga Witt</a></li>
+                <li class="nav-link {% if title == 'Gestalttherapie | Helga Witt' %}nav-link__active{% endif %}"><a href="/gestalttherapie.html">Gestalttherapie</a></li>
+                <li class="nav-link {% if title == 'Kosten für die Therapie | Helga Witt' %}nav-link__active{% endif %}"><a href="/kosten.html">Kosten</a></li>
+                <li class="nav-link {% if title == 'Über Helga Witt | Helga Witt' %}nav-link__active{% endif %}"><a href="/helga-witt.html">Über Helga Witt</a></li>
             </ul>
         </nav>
     </div>
     <div class="content-container">
         {% block content %} {% endblock %}
         <div class="impressum">
-            © Helga Witt 2018 / <a href="#" class="impressum__link">Impressum</a>
+            © Helga Witt 2018 / <a href="/impressum.html" class="impressum__link">Impressum</a>
         </div>
     </div>
   </div>

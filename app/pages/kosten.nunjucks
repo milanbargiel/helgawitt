@@ -1,0 +1,27 @@
+<!-- index.nunjucks -->
+{% set title = 'Kosten für die Therapie | Helga Witt' %}
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="header">
+  <h1 class="header__main">Kosten</h1>
+</div>
+<div class="column-container">
+  <div class="main">
+    <p class="paragraph">In Deutschland ist Gestalttherapie <i>keine Leistung</i> der gesetzlichen Krankenkassen.</p>
+    <h2 class="text-heading">Mein Angebot richtet sich an:</h2>
+    <ul class="list">
+      <li>Privatversicherte</li>
+      <li>Selbstzahler -innen</li>
+      <li>Abrechnung über Krankenkassen <b>nur</b> mit Heilpraktiker-Zusatzversicherung möglich</li>
+    </ul>
+    <h2 class="text-heading">Mein Honorar beträgt:</h2>
+    <ul class="list">
+      <li class="list__item">50,- Euro für eine Einzeltherapiestunde (50 Minuten) für Erwachsene</li>
+      <li class="list__item">40,- Euro für eine Einzeltherapiestunde (50 Minuten) für Kinder und Jugendliche</li>
+      <li class="list__item">das Erstgespräch ist kostenlos</li>
+    </ul>
+    <p class="paragraph">(wobei die Kosten für eine Einzeltherapiesitzung auch individuell vereinbar sind, hierbei findet die persönliche und soziale Situation Berücksichtigung)</p>
+  </div>
+</div>
+{% endblock %}

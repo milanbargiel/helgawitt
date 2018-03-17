@@ -1,0 +1,18 @@
+<!-- index.nunjucks -->
+{% set title = 'Gestalttherapie | Helga Witt' %}
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="header">
+  <h1 class="header__main">Gestalttherapie</h1>
+</div>
+<div class="column-container">
+  <div class="main">
+    <p class="paragraph">Gestalttherapie ist eine ganzheitliche humanistische Therapieform, die ihre Ursprünge u. a. in der Psychoanalyse und der Gestaltpsychologie hat.</p>
+    <p class="paragraph">Körper, Geist und Seele werden als Ganzheit verstanden und als eine Gestalt betrachtet, die die Fähigkeit hat, sich zu entwickeln, sich kreativ anzupassen und im Kontakt mit Anderen zu wachsen.</p>
+    <p class="paragraph">Neben dem Gespräch finden in der Gestalttherapie kreative Medien, Rollenspiele, Traumreisen und körperprozessorientierte Methoden Anwendung. Die Einbeziehung dieser Möglichkeiten ist vom individuellen Therapieverlauf abhängig und wird zwischen den Klienten und der Therapeutin abgestimmt.</p>
+    <p class="paragraph">Gestalttherapie ist ein lebendiger Prozess, der auf der Basis einer wertschätzenden, authentischen Beziehung zwischen Therapeutin und Klient in der Gegenwart - im Hier und Jetzt - stattfindet.</p>
+    <p class="paragraph">Der Mensch in seiner ganzen „Gestalt“ wird somit in seinem Wachstumsprozess gefördert. Die wertschätzende und authentische Beziehung übernimmt dabei eine tragende Rolle.</p>
+  </div>
+</div>
+{% endblock %}

@@ -1,5 +1,5 @@
 <!-- index.nunjucks -->
-{% set title = 'simple-boilerplate' %}
+{% set title = 'Helga Witt | Psychotherapie von Gestalttherapeutin' %}
 {% extends "layout.nunjucks" %}
 
 {% block content %}
