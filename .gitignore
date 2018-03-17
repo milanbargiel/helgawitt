@@ -11,6 +11,5 @@ Thumbs.db
 # Other files #
 ######################
 node_modules/
-dist/
 app/css/
-*.html
+app/*.html
