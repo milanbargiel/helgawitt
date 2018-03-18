@@ -9,7 +9,7 @@
 <div class="column-container">
   <div class="main">
     <div class="quote">
-      <img data-src="images/helga-witt.jpg" class="image quote__portrait">
+      <img data-src="images/helga-witt.jpg" class="image quote__portrait" alt="Helga Witt Gestalttherapeutin">
       <div class="quote__side">
         <div class="quote__text">„Gestalt ist für mich mehr als therapeutisches Handeln,
         Gestalt ist eine Haltung mir selbst, anderen und dem Leben gegenüber.“</div>
