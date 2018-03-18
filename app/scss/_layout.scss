@@ -24,7 +24,7 @@ body {
 
 .content-container {
   padding: 0 $little;
-  max-width: 940px;
+  max-width: $container-width;
 
   @media screen and (min-width: $bp-tablet) {
     padding: 0 $twice;
@@ -35,7 +35,7 @@ body {
 .column-container {
   @media screen and (min-width: $bp-tablet) {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: $column-width;
   }
 }
 

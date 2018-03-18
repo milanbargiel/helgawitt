@@ -3,13 +3,13 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<div class="header">
+<div class="header header--secondary">
   <h1 class="header__main">Über Helga Witt</h1>
 </div>
 <div class="column-container">
   <div class="main">
     <div class="quote">
-      <img src="/images/helga-witt.jpg" alt="" class="quote__portrait">
+      <img data-src="images/helga-witt.jpg" class="image quote__portrait">
       <div class="quote__side">
         <div class="quote__text">„Gestalt ist für mich mehr als therapeutisches Handeln,
         Gestalt ist eine Haltung mir selbst, anderen und dem Leben gegenüber.“</div>
@@ -30,7 +30,6 @@
   </div>
 </div>
 <div id="google-map">
-  <script src="js/map.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ljrs81BUmzYdXsjrcq66UQwu8DBUby0&callback=initMap"></script>
 </div>
 {% endblock %}

@@ -3,11 +3,11 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<div class="header">
+<div class="header header--secondary">
   <h1 class="header__main">Kosten</h1>
 </div>
 <div class="column-container">
-  <div class="main">
+  <div class="main main--last">
     <p class="paragraph">In Deutschland ist Gestalttherapie <i>keine Leistung</i> der gesetzlichen Krankenkassen.</p>
     <h2 class="text-heading">Mein Angebot richtet sich an:</h2>
     <ul class="list">

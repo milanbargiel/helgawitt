@@ -3,11 +3,11 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<div class="header">
+<div class="header header--secondary">
   <h1 class="header__main">Impressum</h1>
 </div>
 <div class="column-container">
-  <div class="main">
+  <div class="main main--last">
     <div class="paragraph">
       <b>Herausgeberin</b>
       <span class="contact__line">Helga Witt</span>

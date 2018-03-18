@@ -1,12 +1,25 @@
 .header {
-  margin-bottom: $hefty;
-
-  @media screen and (min-width: $bp-phablet) {
-    margin-bottom: $wide;
-  }
-
   @media screen and (min-width: $bp-tablet) {
     text-align: center;
+  }
+  
+  &--index {
+    margin-bottom: $hefty;
+
+    @media screen and (min-width: $bp-phablet) {
+      margin-bottom: $wide;
+    }
+  }
+
+  &--secondary {
+    margin: 0 auto;
+    max-width: $column-width;
+    text-align: left;
+    margin-bottom: $hefty;
+
+    @media screen and (min-width: $bp-phablet) {
+      margin-bottom: $large;
+    }
   }
 
   &__main {
@@ -30,12 +43,20 @@
 }
 
 .image {
-  animation: fadein 3s;
-  max-width: 100%;
-  margin-bottom: $small;
+  opacity: 1;
+  transition: opacity 0.3s;
 
-  @media screen and (min-width: $bp-tablet) {
-    margin-bottom: $twice;
+  &[data-src] {
+    opacity: 0;
+  }
+
+  &--main {
+    max-width: 100%;
+    margin-bottom: $small;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: $twice;
+    }
   }
 }
 
@@ -44,14 +65,20 @@
 }
 
 .main {
-  margin-bottom: $big;
+  margin-bottom: $hefty;
+
+  &--last {
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: $big;
+    }
+  }
 }
 
 .contact {
   margin-bottom: $twice;
 
   @media screen and (min-width: $bp-tablet) {
-    margin-bottom: $wide;
+    margin-bottom: $large;
   }
 
   &__header {
@@ -99,18 +126,20 @@
 .quote {
   display: flex;
   flex-direction: column;
-  margin-bottom: $hefty;
+  margin-bottom: $twice;
 
   @media screen and (min-width: $bp-phablet) {
     flex-direction: row;
   }
 
   &__portrait {
-    width: 170px;
+    width: 50%;
     height: 100%;
     margin-bottom: $small;
 
     @media screen and (min-width: $bp-phablet) {
+      width: 33%;
+      height: 100%;
       margin-right: $small;
     }
   }

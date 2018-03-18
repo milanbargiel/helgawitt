@@ -81,7 +81,7 @@ gulp.task('images', () => {
 
 // Cleaning
 gulp.task('clean:dist', () => { // delete docs folder whenever task is run
-  del.sync('docs', '!CNAME');
+  del.sync('docs/**/*', '!docs/CNAME.js');
 });
 
 /* Run sequences
