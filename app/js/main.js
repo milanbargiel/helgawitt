@@ -7,7 +7,7 @@
 
 // map
 function initMap() {
-  var praxis = {lat: 52.4993632, lng: 13.431456};
+  var praxis = {lat: 52.49936, lng: 13.433649999999943};
   var map = new google.maps.Map(document.getElementById('google-map'), {
     zoom: 14,
     center: praxis,
