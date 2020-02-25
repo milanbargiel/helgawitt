@@ -4,11 +4,11 @@
   font-weight: 400;
   src: url('../fonts/overpass-v4-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Overpass Regular'), local('Overpass-Regular'),
-       url('../fonts/overpass-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/overpass-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/overpass-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/overpass-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/overpass-v4-latin-regular.svg#Overpass') format('svg'); /* Legacy iOS */
+  url('../fonts/overpass-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/overpass-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/overpass-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/overpass-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/overpass-v4-latin-regular.svg#Overpass') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -17,11 +17,11 @@
   font-weight: 700;
   src: url('../fonts/overpass-v4-latin-700.eot'); /* IE9 Compat Modes */
   src: local('Overpass Bold'), local('Overpass-Bold'),
-       url('../fonts/overpass-v4-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/overpass-v4-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/overpass-v4-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/overpass-v4-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/overpass-v4-latin-700.svg#Overpass') format('svg'); /* Legacy iOS */
+  url('../fonts/overpass-v4-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/overpass-v4-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/overpass-v4-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/overpass-v4-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/overpass-v4-latin-700.svg#Overpass') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -136,5 +136,17 @@ body {
     &:after {
       @include underline(currentColor);
     }
+  }
+}
+
+.link {
+  position: relative;
+
+  &:after {
+    @include underline(currentColor);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
