@@ -66,7 +66,6 @@ gulp.task('watch', (done) => { // Watchers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 // Optimize CSS and JavaScript
-// Optimize CSS and JavaScript
 gulp.task('useref', (done) => {
   gulp.src('app/*.html')
     .pipe(useref()) // concatenate
@@ -85,6 +84,13 @@ gulp.task('images', (done) => {
   done();
 });
 
+// Copy fonts
+gulp.task('fonts', (done) => {
+  gulp.src('app/fonts/*.+(eot|svg|ttf|woff|woff2)')
+    .pipe(gulp.dest('docs/fonts'));
+  done();
+});
+
 // Cleaning
 gulp.task('clean:dist', (done) => { // delete docs folder whenever task is run
   del.sync(['docs/**/*', '!docs', '!docs/CNAME']);
@@ -94,4 +100,4 @@ gulp.task('clean:dist', (done) => { // delete docs folder whenever task is run
 /* Run sequences
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 gulp.task('default', gulp.series('nunjucks', gulp.parallel('sass', 'browserSync'), 'watch'), (done) => { done(); });
-gulp.task('build', gulp.series('clean:dist', 'nunjucks', 'sass', gulp.parallel('useref', 'images')), (done) => { done(); });
+gulp.task('build', gulp.series('clean:dist', 'nunjucks', 'sass', gulp.parallel('useref', 'images', 'fonts')), (done) => { done(); });
