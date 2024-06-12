@@ -3,11 +3,13 @@
 ## Install node, npm and gulp
 
 ## Run project on a local server
+
 - open the console of your mac
 - run the command `npm install` in project folder to install all required modules
-- run `gulp` command to open loca delevopment environment in a browser
+- run `gulp` command to open local delevopment environment in a browser
 
 ## Deploy to http://helga-witt.de/
+
 Files within `docs` folder are served on webpage http://helga-witt.de/.
 
 - run `gulp build` to minify files and make build in `docs` folgder
